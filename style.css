@@ -6,7 +6,7 @@
 
 :root {
     --primario: #fff;
-    --fondo: #ffebf2; 
+    --fondo: #ffebeb; 
     --fondo-sobre: #ffe3ed; 
     --solapa-sobre: #ffccd5; 
     --cuerpo-sobre: #ffc1d1; 
@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 h1 {
@@ -114,6 +114,39 @@ h1 {
     line-height: 14px;
     cursor: pointer;
     overflow-Y: scroll;
+}
+
+.contenido img{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+}
+
+.imagenes{
+    margin: 40px auto;
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    padding: 10px;
+}
+
+.imagenes img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.imagenes img:hover{
+    cursor: crosshair;
+    width: 100px;
+    opacity: 1;
+    filter: contrast(120%);
+    transition: .5s ease;
 }
 
 .corazon {
